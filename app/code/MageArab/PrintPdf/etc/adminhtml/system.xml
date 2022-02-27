@@ -1,0 +1,38 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="pdf_config" translate="label" type="text" sortOrder="502" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>PDF Configuration</label>
+            <tab>magearab</tab>
+            <resource>MageArab_PrintPdf::config</resource>
+            <group id="general" translate="label comment" type="text" sortOrder="510" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General</label>
+                <field id="pdf_title" type="text" sortOrder="11" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>PDF Title</label>
+                </field>
+                <field id="pdf_author" type="text" sortOrder="11" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>PDF Author</label>
+                </field>
+                <field id="invoice_header" translate="label comment" type="editor" sortOrder="20" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Invoice Header</label>
+                    <frontend_model>MageArab\PrintPdf\Block\Adminhtml\Editor</frontend_model>
+                </field>
+                <field id="invoice_footer" translate="label comment" type="editor" sortOrder="20" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Invoice Footer</label>
+                    <frontend_model>MageArab\PrintPdf\Block\Adminhtml\Editor</frontend_model>
+                </field>
+                <field id="order_header" translate="label comment" type="editor" sortOrder="20" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Order Header</label>
+                    <frontend_model>MageArab\PrintPdf\Block\Adminhtml\Editor</frontend_model>
+                </field>
+                <field id="order_footer" translate="label comment" type="editor" sortOrder="20" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Order Footer</label>
+                    <frontend_model>MageArab\PrintPdf\Block\Adminhtml\Editor</frontend_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

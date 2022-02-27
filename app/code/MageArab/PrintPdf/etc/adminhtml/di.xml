@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!--
+  ~ Copyright (c) Shaymaa Saied  09/05/2021, 02:44.
+  -->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Sales\Block\Adminhtml\Order\Invoice\View">
+        <plugin name="print_invoice" type="MageArab\PrintPdf\Plugin\Block\Adminhtml\Order\Invoice\ViewPlugin"/>
+    </type>
+</config>
